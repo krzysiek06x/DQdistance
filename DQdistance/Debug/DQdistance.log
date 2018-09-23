@@ -1,0 +1,4 @@
+﻿  MainWindow.cpp
+c:\git\dqdistance\dqdistance\mainwindow.cpp(8): warning C4829: Możliwe niepoprawne parametry funkcji main. Rozważ użycie "int main(Platform::Array<Platform::String^>^ argv)"
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  DQdistance.vcxproj -> C:\GIT\DQdistance\Debug\DQdistance.exe
