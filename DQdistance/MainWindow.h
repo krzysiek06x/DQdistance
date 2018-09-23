@@ -37,8 +37,10 @@ namespace DQdistance {
 	private: System::Windows::Forms::Label^  label1;
 	protected:
 	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::TextBox^  textBox1;
-	private: System::Windows::Forms::TextBox^  textBox2;
+	private: System::Windows::Forms::TextBox^  textBox_name;
+	private: System::Windows::Forms::TextBox^  textBox_kilometers;
+
+
 	private: System::Windows::Forms::Button^  button_generate;
 
 	private:
@@ -56,8 +58,8 @@ namespace DQdistance {
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_name = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_kilometers = (gcnew System::Windows::Forms::TextBox());
 			this->button_generate = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
@@ -79,19 +81,19 @@ namespace DQdistance {
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Liczba kilometrów do rozpisania";
 			// 
-			// textBox1
+			// textBox_name
 			// 
-			this->textBox1->Location = System::Drawing::Point(373, 59);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(200, 20);
-			this->textBox1->TabIndex = 2;
+			this->textBox_name->Location = System::Drawing::Point(373, 59);
+			this->textBox_name->Name = L"textBox_name";
+			this->textBox_name->Size = System::Drawing::Size(200, 20);
+			this->textBox_name->TabIndex = 2;
 			// 
-			// textBox2
+			// textBox_kilometers
 			// 
-			this->textBox2->Location = System::Drawing::Point(373, 93);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(200, 20);
-			this->textBox2->TabIndex = 3;
+			this->textBox_kilometers->Location = System::Drawing::Point(373, 93);
+			this->textBox_kilometers->Name = L"textBox_kilometers";
+			this->textBox_kilometers->Size = System::Drawing::Size(200, 20);
+			this->textBox_kilometers->TabIndex = 3;
 			// 
 			// button_generate
 			// 
@@ -108,8 +110,8 @@ namespace DQdistance {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(736, 390);
 			this->Controls->Add(this->button_generate);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->textBox_kilometers);
+			this->Controls->Add(this->textBox_name);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Name = L"MainWindow";
