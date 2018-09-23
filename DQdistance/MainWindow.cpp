@@ -5,9 +5,10 @@ using namespace System::Windows::Forms;
 
 [STAThreadAttribute]
 
-void main(array<String^>^ args) {
+int main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 	DQdistance::MainWindow MainWindow;
 	Application::Run(%MainWindow);
 }
+

@@ -1,3 +1,2 @@
-﻿  MainWindow.cpp
-c:\git\dqdistance\dqdistance\mainwindow.cpp(8): warning C4829: Możliwe niepoprawne parametry funkcji main. Rozważ użycie "int main(Platform::Array<Platform::String^>^ argv)"
+﻿  true_random_number_generator.cpp
   DQdistance.vcxproj -> C:\GIT\DQdistance\Debug\DQdistance.exe

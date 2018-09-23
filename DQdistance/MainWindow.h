@@ -1,3 +1,5 @@
+#include "true__random_number_generator.h"
+
 #pragma once
 
 namespace DQdistance {
@@ -9,11 +11,15 @@ namespace DQdistance {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
+
+
 	/// <summary>
 	/// Podsumowanie informacji o MainWindow
 	/// </summary>
 	public ref class MainWindow : public System::Windows::Forms::Form
 	{
+
+
 	public:
 		MainWindow(void)
 		{
@@ -103,6 +109,7 @@ namespace DQdistance {
 			this->button_generate->TabIndex = 4;
 			this->button_generate->Text = L"generuj";
 			this->button_generate->UseVisualStyleBackColor = true;
+			this->button_generate->Click += gcnew System::EventHandler(this, &MainWindow::button_generate_Click);
 			// 
 			// MainWindow
 			// 
@@ -121,5 +128,13 @@ namespace DQdistance {
 
 		}
 #pragma endregion
-	};
+
+	private: System::Void button_generate_Click(System::Object^  sender, System::EventArgs^  e) {
+
+	int test = true_random_number_generator_generate_number();
+
+	MessageBox::Show("test: " + test);
+
+	}
+};
 }
