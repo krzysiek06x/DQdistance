@@ -1,3 +1,4 @@
 # pliki db 
 *.VC.db
 *.db
+.db
